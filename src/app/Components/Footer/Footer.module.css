@@ -1,0 +1,19 @@
+.footer {
+  color: white;
+  background-color: black;
+  padding: 2em;
+  text-align: center;
+}
+.table {
+  margin: 0 auto;
+  width: 85%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.tHead th,
+.tBody td {
+  padding: 10px;
+  cursor: pointer;
+}
