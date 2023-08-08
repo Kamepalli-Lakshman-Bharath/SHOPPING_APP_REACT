@@ -9,7 +9,9 @@ export default function Navbar() {
 
   const { push } = useRouter();
   const productCount = useSelector((state) => state.productsCount); //accepts call back
-
+  const handleCartRoute = () => {
+    push("/Cart")
+  }
   
   return (
     <nav className={styles.navBar}>
@@ -24,7 +26,7 @@ export default function Navbar() {
           <Link href="/#accessories">ACCESSORIES</Link>
         </div>
       </div>
-      <div onClick={() => push("/Cart")} className={styles.cart}>
+      <div onClick={handleCartRoute} className={styles.cart}>
         <img src="/cart.svg" alt="cart" />
         {productCount > 0 && <p className={styles.cartCount}>{productCount}</p>}
       </div>
